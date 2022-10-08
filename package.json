@@ -7,16 +7,20 @@
     "dev": "next",
     "build": "next build",
     "export": "next export",
-    "deploy": "cd out && now --public"
+    "deploy": "cd out && now --public",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0",
-    "next": "^8.1.0",
+    "next": "^11.1.0",
     "nprogress": "^0.2.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  }
+    "react-dom": "^16.8.6",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
